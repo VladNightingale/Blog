@@ -12,11 +12,11 @@ require "auth.php";
 
 <br>
 <h2>Add note</h2>
-<form action="/handlers/add.php" method="post">
+<form action="add.php" method="post">
 	
-	<input type="text" name="title" ><br>
-	<textarea name="m_desc"></textarea><br>
-	<textarea name="full" ></textarea><br>
+	<input type="text" name="title" placeholder="title" ><br>
+	<textarea name="m_desc" placeholder="Desc"></textarea><br>
+	<textarea name="full" placeholder="Text" ></textarea><br>
 	<input type="submit" name="submit" value="Add">
 
 </form>

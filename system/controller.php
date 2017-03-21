@@ -15,19 +15,26 @@
 		switch($view)
 		{
 			case('all'):
+                $img = "post-sample-image";
 				$table = "articles";
 				$order = "id";
 				$quantity = 100;
-				$all = withdraw($connection, $table, $order, $quantity);
-				$title = 'All';
-				break;
-
-			case('best'):
-				$img = "post-sample-image";
-				$h1 = "Man who sold the world";
+                $h1 = "There is nothing here that you might not know";
 				$span = "It's true";
-				$title = 'Best post';
+				$all = withdraw($connection, $table, $order, $quantity);
+				$title = 'All posts';
 				break;
+                
+            case('full'):
+                $img = "post-bg";
+                $table = "articles";
+				$order = "id";
+				$quantity = 1;
+                $full = full($connection, $table, $order, $quantity);
+                $h1 = "Note";
+                $span = "Look at that shit";
+                $title = $full['title'];
+                break;
 
 			case('about'):
 				$h1 = "About me";

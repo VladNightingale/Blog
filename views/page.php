@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
+    <link href="/img/" rel="shortcut icon" type="image/x-icon" />
     <title><?=$title?></title>
 
     <!-- Bootstrap Core CSS -->
@@ -55,7 +56,7 @@
                         <a href="/?page=about">About</a>
                     </li>
                     <li>
-                        <a href="/?page=best">Best Post</a>
+                        <a href="/?page=all">All Posts</a>
                     </li>
                     <li>
                         <a href="/?page=contact">Contact</a>
@@ -125,7 +126,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                    <p class="copyright text-muted">Copyright &copy; Most useless web-site <?echo date(Y)?></p>
                 </div>
             </div>
         </div>

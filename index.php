@@ -2,6 +2,7 @@
 
 
 	include("config.php");
-	include CONTROLLER;
+	include CONTROLLER; 
+	
 
  ?>
